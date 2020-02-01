@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agrinfor">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp">
+
+            <EditText
+                android:id="@+id/receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="أدخل البريد الإلكتروني"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="البريد الإلكتروني"
+                android:textColor="#D37979"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="sendMail"
+            android:text="إرسال حالة السماد"
+            android:textColor="#FAF8F8"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:stretchColumns="*">
+
+
+            <TableRow
+
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="نوع المحصول"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="نوع المحصول"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/secondRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="ك.الانتاج"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="كمية الانتاج الممكنة"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/thirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/quantity2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="ك.الانتاج"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="ك.المحصول الثاني"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fifthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="التكلفة"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="تكلفة الانتاج"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/cost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="التكلفة"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="ت.المحصول الثاني"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/sixRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="العائد"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="العائد"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/sevenRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/profit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:hint="العائد"
+                    android:padding="18dip"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BE8E8E"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="عائد المحصول الثاني"
+                    android:textColor="#383838"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
